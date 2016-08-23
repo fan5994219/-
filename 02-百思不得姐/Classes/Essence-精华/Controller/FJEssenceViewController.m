@@ -7,7 +7,7 @@
 //
 
 #import "FJEssenceViewController.h"
-
+#import "FJRecommendTagesController.h"
 @interface FJEssenceViewController ()
 
 @end
@@ -32,12 +32,12 @@
 }
 
 
-
-
 - (void)tagClick{
+    
+    FJRecommendTagesController *tagesVC =[[FJRecommendTagesController alloc] init];
 
-
-    NSLog(@"%s",__func__);
+    [self.navigationController pushViewController:tagesVC animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

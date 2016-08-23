@@ -8,6 +8,7 @@
 
 #import "FJFriendTrendsViewController.h"
 #import "FJRecommendViewController.h"
+#import "FJLoginRegisterViewController.h"
 
 @interface FJFriendTrendsViewController ()
 
@@ -27,6 +28,13 @@
 
 }
 
+- (IBAction)loginRegister:(id)sender {
+    
+    FJLoginRegisterViewController *loginVC = [[FJLoginRegisterViewController alloc] init];
+    [self presentViewController:loginVC animated:YES completion:nil];
+    
+    
+}
 
 - (void)friendsButton{
 

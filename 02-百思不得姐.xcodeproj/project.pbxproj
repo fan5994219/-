@@ -62,6 +62,7 @@
 		89080C0D1D67440B00DDAF2E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89080C081D67440B00DDAF2E /* SVRadialGradientLayer.m */; };
 		892514F81D66BFF100CC5878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892514F71D66BFF100CC5878 /* Assets.xcassets */; };
 		892514FB1D66BFF100CC5878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892514F91D66BFF100CC5878 /* LaunchScreen.storyboard */; };
+		894E7DFF1D6AF64E0022B3D2 /* FJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E7DFE1D6AF64E0022B3D2 /* FJTextField.m */; };
 		895ECF4A1D6759D800C0F545 /* FJRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 895ECF491D6759D800C0F545 /* FJRecommendCategory.m */; };
 		895ECF621D675ECE00C0F545 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895ECF4C1D675ECE00C0F545 /* Info.plist */; };
 		895ECF631D675ECE00C0F545 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 895ECF4F1D675ECE00C0F545 /* MJExtensionConst.m */; };
@@ -99,6 +100,13 @@
 		89DA48A51D6852F900B08C66 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA488F1D6852F900B08C66 /* UIScrollView+MJExtension.m */; };
 		89DA48A61D6852F900B08C66 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA48911D6852F900B08C66 /* UIScrollView+MJRefresh.m */; };
 		89DA48A71D6852F900B08C66 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA48931D6852F900B08C66 /* UIView+MJExtension.m */; };
+		89E79CE31D6A9F0B00938898 /* FJLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E79CE11D6A9F0B00938898 /* FJLoginRegisterViewController.m */; };
+		89E79CE41D6A9F0B00938898 /* FJLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E79CE21D6A9F0B00938898 /* FJLoginRegisterViewController.xib */; };
+		89E79D7A1D6ACF1700938898 /* FJVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E79D791D6ACF1700938898 /* FJVerticalButton.m */; };
+		89FE8EDE1D6985DA001B6901 /* FJRecommendTagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE8EDD1D6985DA001B6901 /* FJRecommendTagesController.m */; };
+		89FE8EE11D698E6C001B6901 /* FJRecommendTage.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE8EE01D698E6C001B6901 /* FJRecommendTage.m */; };
+		89FE8EE51D69915A001B6901 /* FJRecommendTageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE8EE31D69915A001B6901 /* FJRecommendTageCell.m */; };
+		89FE8EE61D69915A001B6901 /* FJRecommendTageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89FE8EE41D69915A001B6901 /* FJRecommendTageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +224,8 @@
 		892514F71D66BFF100CC5878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892514FA1D66BFF100CC5878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892514FC1D66BFF100CC5878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894E7DFD1D6AF64E0022B3D2 /* FJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTextField.h; sourceTree = "<group>"; };
+		894E7DFE1D6AF64E0022B3D2 /* FJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTextField.m; sourceTree = "<group>"; };
 		895ECF481D6759D800C0F545 /* FJRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendCategory.h; sourceTree = "<group>"; };
 		895ECF491D6759D800C0F545 /* FJRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJRecommendCategory.m; sourceTree = "<group>"; };
 		895ECF4C1D675ECE00C0F545 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -288,6 +298,18 @@
 		89DA48911D6852F900B08C66 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		89DA48921D6852F900B08C66 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		89DA48931D6852F900B08C66 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		89E79CE01D6A9F0B00938898 /* FJLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLoginRegisterViewController.h; sourceTree = "<group>"; };
+		89E79CE11D6A9F0B00938898 /* FJLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLoginRegisterViewController.m; sourceTree = "<group>"; };
+		89E79CE21D6A9F0B00938898 /* FJLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		89E79D781D6ACF1700938898 /* FJVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJVerticalButton.h; sourceTree = "<group>"; };
+		89E79D791D6ACF1700938898 /* FJVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJVerticalButton.m; sourceTree = "<group>"; };
+		89FE8EDC1D6985D9001B6901 /* FJRecommendTagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendTagesController.h; sourceTree = "<group>"; };
+		89FE8EDD1D6985DA001B6901 /* FJRecommendTagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJRecommendTagesController.m; sourceTree = "<group>"; };
+		89FE8EDF1D698E6C001B6901 /* FJRecommendTage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendTage.h; sourceTree = "<group>"; };
+		89FE8EE01D698E6C001B6901 /* FJRecommendTage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJRecommendTage.m; sourceTree = "<group>"; };
+		89FE8EE21D69915A001B6901 /* FJRecommendTageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendTageCell.h; sourceTree = "<group>"; };
+		89FE8EE31D69915A001B6901 /* FJRecommendTageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJRecommendTageCell.m; sourceTree = "<group>"; };
+		89FE8EE41D69915A001B6901 /* FJRecommendTageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJRecommendTageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -328,6 +350,8 @@
 			children = (
 				8900628D1D66C53200CB9C5F /* FJEssenceViewController.h */,
 				8900628E1D66C53200CB9C5F /* FJEssenceViewController.m */,
+				89FE8EDC1D6985D9001B6901 /* FJRecommendTagesController.h */,
+				89FE8EDD1D6985DA001B6901 /* FJRecommendTagesController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -335,6 +359,8 @@
 		8900628F1D66C53200CB9C5F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				89FE8EDF1D698E6C001B6901 /* FJRecommendTage.h */,
+				89FE8EE01D698E6C001B6901 /* FJRecommendTage.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +368,9 @@
 		890062901D66C53200CB9C5F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				89FE8EE21D69915A001B6901 /* FJRecommendTageCell.h */,
+				89FE8EE31D69915A001B6901 /* FJRecommendTageCell.m */,
+				89FE8EE41D69915A001B6901 /* FJRecommendTageCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -362,6 +391,9 @@
 				890062931D66C53200CB9C5F /* FJFriendTrendsViewController.h */,
 				890062941D66C53200CB9C5F /* FJFriendTrendsViewController.m */,
 				890062C91D672DC300CB9C5F /* FJFriendTrendsViewController.xib */,
+				89E79CE01D6A9F0B00938898 /* FJLoginRegisterViewController.h */,
+				89E79CE11D6A9F0B00938898 /* FJLoginRegisterViewController.m */,
+				89E79CE21D6A9F0B00938898 /* FJLoginRegisterViewController.xib */,
 				8900633A1D6739BC00CB9C5F /* FJRecommendViewController.h */,
 				8900633B1D6739BC00CB9C5F /* FJRecommendViewController.m */,
 				8900633C1D6739BC00CB9C5F /* FJRecommendViewController.xib */,
@@ -389,6 +421,10 @@
 				89DA485D1D68088E00B08C66 /* FJRecommendUserCell.h */,
 				89DA485E1D68088E00B08C66 /* FJRecommendUserCell.m */,
 				89DA485F1D68088E00B08C66 /* FJRecommendUserCell.xib */,
+				89E79D781D6ACF1700938898 /* FJVerticalButton.h */,
+				89E79D791D6ACF1700938898 /* FJVerticalButton.m */,
+				894E7DFD1D6AF64E0022B3D2 /* FJTextField.h */,
+				894E7DFE1D6AF64E0022B3D2 /* FJTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -859,7 +895,9 @@
 				895ECF621D675ECE00C0F545 /* Info.plist in Resources */,
 				89080C0B1D67440B00DDAF2E /* SVProgressHUD.bundle in Resources */,
 				890062CA1D672DC300CB9C5F /* FJFriendTrendsViewController.xib in Resources */,
+				89FE8EE61D69915A001B6901 /* FJRecommendTageCell.xib in Resources */,
 				89DA48611D68088E00B08C66 /* FJRecommendUserCell.xib in Resources */,
+				89E79CE41D6A9F0B00938898 /* FJLoginRegisterViewController.xib in Resources */,
 				895ECF711D67610500C0F545 /* FJCommendCategoryTableViewCell.xib in Resources */,
 				8900633E1D6739BC00CB9C5F /* FJRecommendViewController.xib in Resources */,
 				892514FB1D66BFF100CC5878 /* LaunchScreen.storyboard in Resources */,
@@ -890,6 +928,7 @@
 				89DA48641D680E8C00B08C66 /* FJRecommendUser.m in Sources */,
 				890063211D67386C00CB9C5F /* MASConstraint.m in Sources */,
 				8900632B1D67386C00CB9C5F /* SDImageCache.m in Sources */,
+				89FE8EDE1D6985DA001B6901 /* FJRecommendTagesController.m in Sources */,
 				890063301D67386C00CB9C5F /* SDWebImageManager.m in Sources */,
 				890063241D67386C00CB9C5F /* MASViewAttribute.m in Sources */,
 				895ECF671D675ECE00C0F545 /* MJPropertyType.m in Sources */,
@@ -903,7 +942,9 @@
 				8900631A1D67386C00CB9C5F /* AFNetworkReachabilityManager.m in Sources */,
 				890063351D67386C00CB9C5F /* UIImageView+HighlightedWebCache.m in Sources */,
 				89DA48981D6852F900B08C66 /* MJRefreshHeader.m in Sources */,
+				89FE8EE11D698E6C001B6901 /* FJRecommendTage.m in Sources */,
 				895ECF6C1D675ECE00C0F545 /* NSString+MJExtension.m in Sources */,
+				89E79D7A1D6ACF1700938898 /* FJVerticalButton.m in Sources */,
 				890063251D67386C00CB9C5F /* MASViewConstraint.m in Sources */,
 				89DA48A61D6852F900B08C66 /* UIScrollView+MJRefresh.m in Sources */,
 				89DA48971D6852F900B08C66 /* MJRefreshFooter.m in Sources */,
@@ -918,6 +959,7 @@
 				890062B61D66C53200CB9C5F /* FJMeViewController.m in Sources */,
 				890062BA1D66C53200CB9C5F /* UIView+FJUIView.m in Sources */,
 				895ECF691D675ECE00C0F545 /* NSObject+MJCoding.m in Sources */,
+				89E79CE31D6A9F0B00938898 /* FJLoginRegisterViewController.m in Sources */,
 				89DA48991D6852F900B08C66 /* MJRefreshAutoGifFooter.m in Sources */,
 				895ECF681D675ECE00C0F545 /* NSObject+MJClass.m in Sources */,
 				890063191D67386C00CB9C5F /* AFHTTPSessionManager.m in Sources */,
@@ -942,6 +984,8 @@
 				895ECF6B1D675ECE00C0F545 /* NSObject+MJProperty.m in Sources */,
 				890063331D67386C00CB9C5F /* UIImage+GIF.m in Sources */,
 				8900632E1D67386C00CB9C5F /* SDWebImageDownloader.m in Sources */,
+				894E7DFF1D6AF64E0022B3D2 /* FJTextField.m in Sources */,
+				89FE8EE51D69915A001B6901 /* FJRecommendTageCell.m in Sources */,
 				895ECF4A1D6759D800C0F545 /* FJRecommendCategory.m in Sources */,
 				89DA489E1D6852F900B08C66 /* MJRefreshBackStateFooter.m in Sources */,
 				89DA48951D6852F900B08C66 /* MJRefreshBackFooter.m in Sources */,

@@ -18,9 +18,12 @@
 #import "MJRefresh.h"
 
 #define FJRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define FJRGBGlobalBC FJRGBColor(223, 223, 223)
+
 
 #define urlLeftString  @"http://api.budejie.com/api/api_open.php"
 #define urlRightString  @"http://api.budejie.com/api/api_open.php"
+#define urlTagesString  @"http://api.budejie.com/api/api_open.php"
 
 
 #ifdef DEBUG
