@@ -62,6 +62,15 @@
 		89080C0D1D67440B00DDAF2E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89080C081D67440B00DDAF2E /* SVRadialGradientLayer.m */; };
 		892514F81D66BFF100CC5878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892514F71D66BFF100CC5878 /* Assets.xcassets */; };
 		892514FB1D66BFF100CC5878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892514F91D66BFF100CC5878 /* LaunchScreen.storyboard */; };
+		8933228F1D6D8886000E2327 /* FJTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933228E1D6D8886000E2327 /* FJTopic.m */; };
+		893322951D6DBAEF000E2327 /* FJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 893322941D6DBAEF000E2327 /* FJConst.m */; };
+		893322991D6DC5AB000E2327 /* FJTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 893322971D6DC5AB000E2327 /* FJTopicCell.m */; };
+		8933229A1D6DC5AB000E2327 /* FJTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 893322981D6DC5AB000E2327 /* FJTopicCell.xib */; };
+		8939C7551D72EAC400E91502 /* FJPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8939C7531D72EAC400E91502 /* FJPublishViewController.m */; };
+		8939C7561D72EAC400E91502 /* FJPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8939C7541D72EAC400E91502 /* FJPublishViewController.xib */; };
+		89450CDB1D7169630096A1F5 /* FJShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89450CD91D7169630096A1F5 /* FJShowPictureViewController.m */; };
+		89450CDC1D7169630096A1F5 /* FJShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89450CDA1D7169630096A1F5 /* FJShowPictureViewController.xib */; };
+		89450CDF1D716E190096A1F5 /* FJProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89450CDE1D716E190096A1F5 /* FJProgressView.m */; };
 		894E7DFF1D6AF64E0022B3D2 /* FJTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E7DFE1D6AF64E0022B3D2 /* FJTextField.m */; };
 		895ECF4A1D6759D800C0F545 /* FJRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 895ECF491D6759D800C0F545 /* FJRecommendCategory.m */; };
 		895ECF621D675ECE00C0F545 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 895ECF4C1D675ECE00C0F545 /* Info.plist */; };
@@ -77,6 +86,10 @@
 		895ECF6C1D675ECE00C0F545 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 895ECF611D675ECE00C0F545 /* NSString+MJExtension.m */; };
 		895ECF701D67610500C0F545 /* FJCommendCategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 895ECF6E1D67610500C0F545 /* FJCommendCategoryTableViewCell.m */; };
 		895ECF711D67610500C0F545 /* FJCommendCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895ECF6F1D67610500C0F545 /* FJCommendCategoryTableViewCell.xib */; };
+		896FC3F21D6EAE4900D8D170 /* NSDate+FJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FC3F11D6EAE4900D8D170 /* NSDate+FJExtension.m */; };
+		896FC4081D6FD40D00D8D170 /* FJTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FC4071D6FD40D00D8D170 /* FJTopicViewController.m */; };
+		896FC40B1D702BBF00D8D170 /* FJTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 896FC40A1D702BBF00D8D170 /* FJTopicPictureView.m */; };
+		896FC40D1D702C2500D8D170 /* FJTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896FC40C1D702C2500D8D170 /* FJTopicPictureView.xib */; };
 		89DA48601D68088E00B08C66 /* FJRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA485E1D68088E00B08C66 /* FJRecommendUserCell.m */; };
 		89DA48611D68088E00B08C66 /* FJRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89DA485F1D68088E00B08C66 /* FJRecommendUserCell.xib */; };
 		89DA48641D680E8C00B08C66 /* FJRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA48631D680E8C00B08C66 /* FJRecommendUser.m */; };
@@ -100,9 +113,13 @@
 		89DA48A51D6852F900B08C66 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA488F1D6852F900B08C66 /* UIScrollView+MJExtension.m */; };
 		89DA48A61D6852F900B08C66 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA48911D6852F900B08C66 /* UIScrollView+MJRefresh.m */; };
 		89DA48A71D6852F900B08C66 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 89DA48931D6852F900B08C66 /* UIView+MJExtension.m */; };
+		89E758801D71412C00593253 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E7587D1D71412C00593253 /* DACircularProgressView.m */; };
+		89E758811D71412C00593253 /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E7587F1D71412C00593253 /* DALabeledCircularProgressView.m */; };
 		89E79CE31D6A9F0B00938898 /* FJLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E79CE11D6A9F0B00938898 /* FJLoginRegisterViewController.m */; };
 		89E79CE41D6A9F0B00938898 /* FJLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E79CE21D6A9F0B00938898 /* FJLoginRegisterViewController.xib */; };
 		89E79D7A1D6ACF1700938898 /* FJVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E79D791D6ACF1700938898 /* FJVerticalButton.m */; };
+		89F525AA1D6BFE97007CE9DE /* FJPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F525A91D6BFE97007CE9DE /* FJPushGuideView.m */; };
+		89F525AC1D6BFEB8007CE9DE /* FJPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89F525AB1D6BFEB8007CE9DE /* FJPushGuideView.xib */; };
 		89FE8EDE1D6985DA001B6901 /* FJRecommendTagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE8EDD1D6985DA001B6901 /* FJRecommendTagesController.m */; };
 		89FE8EE11D698E6C001B6901 /* FJRecommendTage.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE8EE01D698E6C001B6901 /* FJRecommendTage.m */; };
 		89FE8EE51D69915A001B6901 /* FJRecommendTageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE8EE31D69915A001B6901 /* FJRecommendTageCell.m */; };
@@ -224,6 +241,21 @@
 		892514F71D66BFF100CC5878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892514FA1D66BFF100CC5878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892514FC1D66BFF100CC5878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8933228D1D6D8886000E2327 /* FJTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTopic.h; sourceTree = "<group>"; };
+		8933228E1D6D8886000E2327 /* FJTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTopic.m; sourceTree = "<group>"; };
+		893322931D6DBAEF000E2327 /* FJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJConst.h; sourceTree = "<group>"; };
+		893322941D6DBAEF000E2327 /* FJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJConst.m; sourceTree = "<group>"; };
+		893322961D6DC5AB000E2327 /* FJTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTopicCell.h; sourceTree = "<group>"; };
+		893322971D6DC5AB000E2327 /* FJTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTopicCell.m; sourceTree = "<group>"; };
+		893322981D6DC5AB000E2327 /* FJTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJTopicCell.xib; sourceTree = "<group>"; };
+		8939C7521D72EAC400E91502 /* FJPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPublishViewController.h; sourceTree = "<group>"; };
+		8939C7531D72EAC400E91502 /* FJPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPublishViewController.m; sourceTree = "<group>"; };
+		8939C7541D72EAC400E91502 /* FJPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJPublishViewController.xib; sourceTree = "<group>"; };
+		89450CD81D7169630096A1F5 /* FJShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJShowPictureViewController.h; sourceTree = "<group>"; };
+		89450CD91D7169630096A1F5 /* FJShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJShowPictureViewController.m; sourceTree = "<group>"; };
+		89450CDA1D7169630096A1F5 /* FJShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJShowPictureViewController.xib; sourceTree = "<group>"; };
+		89450CDD1D716E190096A1F5 /* FJProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJProgressView.h; sourceTree = "<group>"; };
+		89450CDE1D716E190096A1F5 /* FJProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJProgressView.m; sourceTree = "<group>"; };
 		894E7DFD1D6AF64E0022B3D2 /* FJTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTextField.h; sourceTree = "<group>"; };
 		894E7DFE1D6AF64E0022B3D2 /* FJTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTextField.m; sourceTree = "<group>"; };
 		895ECF481D6759D800C0F545 /* FJRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendCategory.h; sourceTree = "<group>"; };
@@ -253,6 +285,13 @@
 		895ECF6D1D67610500C0F545 /* FJCommendCategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJCommendCategoryTableViewCell.h; sourceTree = "<group>"; };
 		895ECF6E1D67610500C0F545 /* FJCommendCategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJCommendCategoryTableViewCell.m; sourceTree = "<group>"; };
 		895ECF6F1D67610500C0F545 /* FJCommendCategoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJCommendCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		896FC3F01D6EAE4900D8D170 /* NSDate+FJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FJExtension.h"; sourceTree = "<group>"; };
+		896FC3F11D6EAE4900D8D170 /* NSDate+FJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FJExtension.m"; sourceTree = "<group>"; };
+		896FC4061D6FD40D00D8D170 /* FJTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTopicViewController.h; sourceTree = "<group>"; };
+		896FC4071D6FD40D00D8D170 /* FJTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTopicViewController.m; sourceTree = "<group>"; };
+		896FC4091D702BBF00D8D170 /* FJTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTopicPictureView.h; sourceTree = "<group>"; };
+		896FC40A1D702BBF00D8D170 /* FJTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTopicPictureView.m; sourceTree = "<group>"; };
+		896FC40C1D702C2500D8D170 /* FJTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJTopicPictureView.xib; sourceTree = "<group>"; };
 		89DA485D1D68088E00B08C66 /* FJRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendUserCell.h; sourceTree = "<group>"; };
 		89DA485E1D68088E00B08C66 /* FJRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJRecommendUserCell.m; sourceTree = "<group>"; };
 		89DA485F1D68088E00B08C66 /* FJRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJRecommendUserCell.xib; sourceTree = "<group>"; };
@@ -298,11 +337,18 @@
 		89DA48911D6852F900B08C66 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		89DA48921D6852F900B08C66 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		89DA48931D6852F900B08C66 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		89E7587C1D71412B00593253 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
+		89E7587D1D71412C00593253 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
+		89E7587E1D71412C00593253 /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
+		89E7587F1D71412C00593253 /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
 		89E79CE01D6A9F0B00938898 /* FJLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJLoginRegisterViewController.h; sourceTree = "<group>"; };
 		89E79CE11D6A9F0B00938898 /* FJLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJLoginRegisterViewController.m; sourceTree = "<group>"; };
 		89E79CE21D6A9F0B00938898 /* FJLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		89E79D781D6ACF1700938898 /* FJVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJVerticalButton.h; sourceTree = "<group>"; };
 		89E79D791D6ACF1700938898 /* FJVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJVerticalButton.m; sourceTree = "<group>"; };
+		89F525A81D6BFE97007CE9DE /* FJPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPushGuideView.h; sourceTree = "<group>"; };
+		89F525A91D6BFE97007CE9DE /* FJPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPushGuideView.m; sourceTree = "<group>"; };
+		89F525AB1D6BFEB8007CE9DE /* FJPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJPushGuideView.xib; sourceTree = "<group>"; };
 		89FE8EDC1D6985D9001B6901 /* FJRecommendTagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendTagesController.h; sourceTree = "<group>"; };
 		89FE8EDD1D6985DA001B6901 /* FJRecommendTagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJRecommendTagesController.m; sourceTree = "<group>"; };
 		89FE8EDF1D698E6C001B6901 /* FJRecommendTage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecommendTage.h; sourceTree = "<group>"; };
@@ -352,6 +398,11 @@
 				8900628E1D66C53200CB9C5F /* FJEssenceViewController.m */,
 				89FE8EDC1D6985D9001B6901 /* FJRecommendTagesController.h */,
 				89FE8EDD1D6985DA001B6901 /* FJRecommendTagesController.m */,
+				896FC4061D6FD40D00D8D170 /* FJTopicViewController.h */,
+				896FC4071D6FD40D00D8D170 /* FJTopicViewController.m */,
+				89450CD81D7169630096A1F5 /* FJShowPictureViewController.h */,
+				89450CD91D7169630096A1F5 /* FJShowPictureViewController.m */,
+				89450CDA1D7169630096A1F5 /* FJShowPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,6 +412,8 @@
 			children = (
 				89FE8EDF1D698E6C001B6901 /* FJRecommendTage.h */,
 				89FE8EE01D698E6C001B6901 /* FJRecommendTage.m */,
+				8933228D1D6D8886000E2327 /* FJTopic.h */,
+				8933228E1D6D8886000E2327 /* FJTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -371,6 +424,14 @@
 				89FE8EE21D69915A001B6901 /* FJRecommendTageCell.h */,
 				89FE8EE31D69915A001B6901 /* FJRecommendTageCell.m */,
 				89FE8EE41D69915A001B6901 /* FJRecommendTageCell.xib */,
+				893322961D6DC5AB000E2327 /* FJTopicCell.h */,
+				893322971D6DC5AB000E2327 /* FJTopicCell.m */,
+				893322981D6DC5AB000E2327 /* FJTopicCell.xib */,
+				896FC4091D702BBF00D8D170 /* FJTopicPictureView.h */,
+				896FC40A1D702BBF00D8D170 /* FJTopicPictureView.m */,
+				896FC40C1D702C2500D8D170 /* FJTopicPictureView.xib */,
+				89450CDD1D716E190096A1F5 /* FJProgressView.h */,
+				89450CDE1D716E190096A1F5 /* FJProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,6 +568,8 @@
 				890062AE1D66C53200CB9C5F /* Info.plist */,
 				890062AF1D66C53200CB9C5F /* main.m */,
 				890062B01D66C53200CB9C5F /* PrefixHeader.pch */,
+				893322931D6DBAEF000E2327 /* FJConst.h */,
+				893322941D6DBAEF000E2327 /* FJConst.m */,
 			);
 			path = "Other- 其他";
 			sourceTree = "<group>";
@@ -518,6 +581,8 @@
 				890062A81D66C53200CB9C5F /* UIBarButtonItem+FJExtension.m */,
 				890062A91D66C53200CB9C5F /* UIView+FJUIView.h */,
 				890062AA1D66C53200CB9C5F /* UIView+FJUIView.m */,
+				896FC3F01D6EAE4900D8D170 /* NSDate+FJExtension.h */,
+				896FC3F11D6EAE4900D8D170 /* NSDate+FJExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -529,6 +594,9 @@
 				890062AD1D66C53200CB9C5F /* FJTabBarController.m */,
 				890062BF1D66E15000CB9C5F /* FJNavigationController.h */,
 				890062C01D66E15000CB9C5F /* FJNavigationController.m */,
+				8939C7521D72EAC400E91502 /* FJPublishViewController.h */,
+				8939C7531D72EAC400E91502 /* FJPublishViewController.m */,
+				8939C7541D72EAC400E91502 /* FJPublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -538,6 +606,9 @@
 			children = (
 				890062B21D66C53200CB9C5F /* FJTabBar.h */,
 				890062B31D66C53200CB9C5F /* FJTabBar.m */,
+				89F525A81D6BFE97007CE9DE /* FJPushGuideView.h */,
+				89F525A91D6BFE97007CE9DE /* FJPushGuideView.m */,
+				89F525AB1D6BFEB8007CE9DE /* FJPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -545,6 +616,7 @@
 		890062CB1D67386C00CB9C5F /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				89E7587B1D71412B00593253 /* DACircularProgress */,
 				89DA48651D6852F900B08C66 /* MJRefresh */,
 				895ECF4B1D675ECE00C0F545 /* MJExtension */,
 				89080BFE1D67440B00DDAF2E /* SVProgressHUD */,
@@ -834,6 +906,17 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		89E7587B1D71412B00593253 /* DACircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				89E7587C1D71412B00593253 /* DACircularProgressView.h */,
+				89E7587D1D71412C00593253 /* DACircularProgressView.m */,
+				89E7587E1D71412C00593253 /* DALabeledCircularProgressView.h */,
+				89E7587F1D71412C00593253 /* DALabeledCircularProgressView.m */,
+			);
+			path = DACircularProgress;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -904,7 +987,12 @@
 				89DA48A21D6852F900B08C66 /* MJRefresh.bundle in Resources */,
 				892514F81D66BFF100CC5878 /* Assets.xcassets in Resources */,
 				8900631F1D67386C00CB9C5F /* Info.plist in Resources */,
+				89450CDC1D7169630096A1F5 /* FJShowPictureViewController.xib in Resources */,
 				890062BC1D66C53200CB9C5F /* Info.plist in Resources */,
+				8939C7561D72EAC400E91502 /* FJPublishViewController.xib in Resources */,
+				896FC40D1D702C2500D8D170 /* FJTopicPictureView.xib in Resources */,
+				89F525AC1D6BFEB8007CE9DE /* FJPushGuideView.xib in Resources */,
+				8933229A1D6DC5AB000E2327 /* FJTopicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -922,20 +1010,24 @@
 				890063371D67386C00CB9C5F /* UIView+WebCacheOperation.m in Sources */,
 				890063311D67386C00CB9C5F /* SDWebImagePrefetcher.m in Sources */,
 				89DA48601D68088E00B08C66 /* FJRecommendUserCell.m in Sources */,
+				893322951D6DBAEF000E2327 /* FJConst.m in Sources */,
 				89DA48A01D6852F900B08C66 /* MJRefreshNormalHeader.m in Sources */,
 				89080C0C1D67440B00DDAF2E /* SVProgressHUD.m in Sources */,
 				890063361D67386C00CB9C5F /* UIImageView+WebCache.m in Sources */,
 				89DA48641D680E8C00B08C66 /* FJRecommendUser.m in Sources */,
 				890063211D67386C00CB9C5F /* MASConstraint.m in Sources */,
+				89E758811D71412C00593253 /* DALabeledCircularProgressView.m in Sources */,
 				8900632B1D67386C00CB9C5F /* SDImageCache.m in Sources */,
 				89FE8EDE1D6985DA001B6901 /* FJRecommendTagesController.m in Sources */,
 				890063301D67386C00CB9C5F /* SDWebImageManager.m in Sources */,
 				890063241D67386C00CB9C5F /* MASViewAttribute.m in Sources */,
 				895ECF671D675ECE00C0F545 /* MJPropertyType.m in Sources */,
+				8933228F1D6D8886000E2327 /* FJTopic.m in Sources */,
 				890063221D67386C00CB9C5F /* MASConstraintMaker.m in Sources */,
 				890063381D67386C00CB9C5F /* NSObject+YYModel.m in Sources */,
 				8900631E1D67386C00CB9C5F /* AFURLSessionManager.m in Sources */,
 				8900631B1D67386C00CB9C5F /* AFSecurityPolicy.m in Sources */,
+				893322991D6DC5AB000E2327 /* FJTopicCell.m in Sources */,
 				89DA489F1D6852F900B08C66 /* MJRefreshGifHeader.m in Sources */,
 				890062C11D66E15000CB9C5F /* FJNavigationController.m in Sources */,
 				8900632C1D67386C00CB9C5F /* SDWebImageCompat.m in Sources */,
@@ -957,6 +1049,7 @@
 				895ECF661D675ECE00C0F545 /* MJPropertyKey.m in Sources */,
 				89080C091D67440B00DDAF2E /* SVIndefiniteAnimatedView.m in Sources */,
 				890062B61D66C53200CB9C5F /* FJMeViewController.m in Sources */,
+				896FC40B1D702BBF00D8D170 /* FJTopicPictureView.m in Sources */,
 				890062BA1D66C53200CB9C5F /* UIView+FJUIView.m in Sources */,
 				895ECF691D675ECE00C0F545 /* NSObject+MJCoding.m in Sources */,
 				89E79CE31D6A9F0B00938898 /* FJLoginRegisterViewController.m in Sources */,
@@ -965,6 +1058,7 @@
 				890063191D67386C00CB9C5F /* AFHTTPSessionManager.m in Sources */,
 				890063231D67386C00CB9C5F /* MASLayoutConstraint.m in Sources */,
 				895ECF701D67610500C0F545 /* FJCommendCategoryTableViewCell.m in Sources */,
+				89450CDF1D716E190096A1F5 /* FJProgressView.m in Sources */,
 				890062B71D66C53200CB9C5F /* FJNewViewController.m in Sources */,
 				890062B51D66C53200CB9C5F /* FJFriendTrendsViewController.m in Sources */,
 				890063341D67386C00CB9C5F /* UIImage+MultiFormat.m in Sources */,
@@ -977,6 +1071,7 @@
 				890063391D67386C00CB9C5F /* YYClassInfo.m in Sources */,
 				8900633D1D6739BC00CB9C5F /* FJRecommendViewController.m in Sources */,
 				89DA48961D6852F900B08C66 /* MJRefreshComponent.m in Sources */,
+				8939C7551D72EAC400E91502 /* FJPublishViewController.m in Sources */,
 				890063321D67386C00CB9C5F /* UIButton+WebCache.m in Sources */,
 				890062B81D66C53200CB9C5F /* AppDelegate.m in Sources */,
 				89DA48A51D6852F900B08C66 /* UIScrollView+MJExtension.m in Sources */,
@@ -990,16 +1085,21 @@
 				89DA489E1D6852F900B08C66 /* MJRefreshBackStateFooter.m in Sources */,
 				89DA48951D6852F900B08C66 /* MJRefreshBackFooter.m in Sources */,
 				89DA489A1D6852F900B08C66 /* MJRefreshAutoNormalFooter.m in Sources */,
+				896FC3F21D6EAE4900D8D170 /* NSDate+FJExtension.m in Sources */,
+				89E758801D71412C00593253 /* DACircularProgressView.m in Sources */,
 				89DA48A41D6852F900B08C66 /* NSBundle+MJRefresh.m in Sources */,
 				895ECF651D675ECE00C0F545 /* MJProperty.m in Sources */,
 				890062BD1D66C53200CB9C5F /* main.m in Sources */,
 				8900631C1D67386C00CB9C5F /* AFURLRequestSerialization.m in Sources */,
 				890063261D67386C00CB9C5F /* NSArray+MASAdditions.m in Sources */,
+				89450CDB1D7169630096A1F5 /* FJShowPictureViewController.m in Sources */,
 				890063291D67386C00CB9C5F /* ViewController+MASAdditions.m in Sources */,
 				895ECF631D675ECE00C0F545 /* MJExtensionConst.m in Sources */,
 				89DA48A71D6852F900B08C66 /* UIView+MJExtension.m in Sources */,
 				890062BB1D66C53200CB9C5F /* FJTabBarController.m in Sources */,
 				89DA489D1D6852F900B08C66 /* MJRefreshBackNormalFooter.m in Sources */,
+				896FC4081D6FD40D00D8D170 /* FJTopicViewController.m in Sources */,
+				89F525AA1D6BFE97007CE9DE /* FJPushGuideView.m in Sources */,
 				8900631D1D67386C00CB9C5F /* AFURLResponseSerialization.m in Sources */,
 				890062BE1D66C53200CB9C5F /* FJTabBar.m in Sources */,
 			);

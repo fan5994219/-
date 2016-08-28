@@ -10,6 +10,14 @@
 
 @implementation FJRecommendCategory
 
+
++(NSDictionary *)replacedKeyFromPropertyName{
+    return @{
+             @"ID":@"id"
+             
+             };
+}
+
 - (NSMutableArray *)users
 {
     if (!_users) {

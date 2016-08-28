@@ -12,22 +12,22 @@
 
 
 
-+ (void)initialize{
-    
-    unsigned int count = 0;
-
-    //拷贝出所有的属性列表
-  objc_property_t *properties= class_copyPropertyList([UITextField class], &count);
-    
-    for (NSInteger i =0; i<count; i++) {
-        objc_property_t property =properties[i];
-        
-        FJLog(@"%s %s",property_getName(property),property_getAttributes(property));
-    }
-    
-    free(properties);
-    
-}
+//+ (void)initialize{
+//    
+//    unsigned int count = 0;
+//
+//    //拷贝出所有的属性列表
+//  objc_property_t *properties= class_copyPropertyList([UITextField class], &count);
+//    
+//    for (NSInteger i =0; i<count; i++) {
+//        objc_property_t property =properties[i];
+//        
+//        FJLog(@"%s %s",property_getName(property),property_getAttributes(property));
+//    }
+//    
+//    free(properties);
+//    
+//}
 
 
 //+  (void)initialize{

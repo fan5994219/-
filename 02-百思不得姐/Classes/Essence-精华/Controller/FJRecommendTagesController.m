@@ -55,7 +55,8 @@ static NSString * const FJTagesId = @"tag";
 /**
  * 加载数据
  */
-- (void)loadTages{
+- (void)loadTages
+{
     //显示指示器
     [SVProgressHUD show];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
@@ -73,7 +74,6 @@ static NSString * const FJTagesId = @"tag";
         
         //隐藏指示器
         [SVProgressHUD dismiss];
-        FJLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //隐藏指示器
         [SVProgressHUD dismiss];

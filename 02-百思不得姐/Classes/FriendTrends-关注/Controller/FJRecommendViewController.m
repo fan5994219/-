@@ -73,7 +73,6 @@ static NSString *const FJUserId = @"user";
     //显示指示器
     [SVProgressHUD show];
     
-    
     //发送请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"category";
@@ -142,8 +141,7 @@ static NSString *const FJUserId = @"user";
     
     //footer
     self.userTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
-   self.userTableView.mj_footer.hidden = YES;
-        
+    
 }
 #pragma mark - 加载用户数据
 /** 下拉刷新 */
@@ -158,14 +156,15 @@ static NSString *const FJUserId = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
-    params[@"category_id"] = @(cate.id);
+    params[@"category_id"] = @(cate.ID);
     params[@"page"] = @(cate.current_page);
     //存储请求参数
     self.params = params;
     
     //发送请求给服务器，加载右侧数据
     [self.manager GET:urlRightString parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary * responseObject) {
+        
         //字典数组-->模型数组
         NSArray *users = [FJRecommendUser mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
@@ -211,7 +210,7 @@ static NSString *const FJUserId = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
-    params[@"category_id"]= @(category.id);
+    params[@"category_id"]= @(category.ID);
     params[@"page"] = @(++category.current_page);
     //存储请求参数
     self.params = params;
@@ -264,6 +263,7 @@ static NSString *const FJUserId = @"user";
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+
     //左边的类别表格
     if (tableView == self.categoryTableView) return self.categories.count;
     

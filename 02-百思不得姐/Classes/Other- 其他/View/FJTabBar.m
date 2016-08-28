@@ -7,6 +7,7 @@
 //
 
 #import "FJTabBar.h"
+#import "FJPublishViewController.h"
 
 @interface FJTabBar ()
 
@@ -34,6 +35,10 @@
         //添加发布按钮
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        
+        
+        [publishButton addTarget:self action:@selector(publishClick) forControlEvents:UIControlEventTouchUpInside];
+        
         //自适应
         [publishButton sizeToFit];
 
@@ -44,6 +49,15 @@
         
     }
     return self;
+}
+
+
+- (void)publishClick{
+    
+    FJPublishViewController *publishVC = [[FJPublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
+    
+    
 }
 
 - (void)layoutSubviews{

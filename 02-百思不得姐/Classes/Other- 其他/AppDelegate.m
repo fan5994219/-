@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "FJTabBarController.h"
+#import "FJPushGuideView.h"
+
 @interface AppDelegate ()
 
 @end
@@ -26,6 +28,8 @@
     //显示窗口
     [self.window makeKeyAndVisible];
     
+    //显示推送引导
+    [FJPushGuideView show];
     
     return YES;
 }

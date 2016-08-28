@@ -8,6 +8,8 @@
 
 #import "FJRecommendUserCell.h"
 #import "FJRecommendUser.h"
+#import "FJLoginRegisterViewController.h"
+
 
 @interface FJRecommendUserCell ()
 
@@ -19,6 +21,11 @@
 @end
 
 @implementation FJRecommendUserCell
+- (IBAction)friendTrends:(id)sender {
+    
+    
+    
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
