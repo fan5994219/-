@@ -30,7 +30,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
     //设置导航栏内容
     [self setupNav];
@@ -43,7 +42,6 @@
 
     //设置contentView
     [self setupContentView];
-
     
 }
 
@@ -52,6 +50,23 @@
  */
 - (void)setupChildVces
 {
+    
+    FJTopicViewController *all = [[FJTopicViewController alloc] init];
+    all.title =@"全部";
+    all.type = FJTopicTypeAll;
+    [self addChildViewController:all];
+
+    
+    FJTopicViewController *video= [[FJTopicViewController alloc] init];
+    video.title =@"视频";
+    video.type = FJTopicTypeVideo;
+    [self addChildViewController:video];
+
+
+    FJTopicViewController *voice = [[FJTopicViewController alloc] init];
+    voice.title =@"声音";
+    voice.type = FJTopicTypeVoice;
+    [self addChildViewController:voice];
     
     FJTopicViewController *picture = [[FJTopicViewController alloc] init];
     picture.title =@"图片";
@@ -63,24 +78,6 @@
     word.title =@"段子";
     word.type = FJTopicTypeWord;
     [self addChildViewController:word];
-
-    
-    FJTopicViewController *all = [[FJTopicViewController alloc] init];
-    all.title =@"全部";
-    all.type = FJTopicTypeAll;
-    [self addChildViewController:all];
-    
-
-    FJTopicViewController *video= [[FJTopicViewController alloc] init];
-    video.title =@"视频";
-    video.type = FJTopicTypeVideo;
-    [self addChildViewController:video];
-    
-    FJTopicViewController *voice = [[FJTopicViewController alloc] init];
-    voice.title =@"声音";
-    voice.type = FJTopicTypeVoice;
-    [self addChildViewController:voice];
-    
 
     
 }

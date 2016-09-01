@@ -47,15 +47,27 @@
 /** 中图片的URL */
 @property (nonatomic,copy) NSString *middle_image;
 
-/** 帖子的类型 */
-@property (nonatomic,assign)  FJTopicType type;
-
 /** 是否为新浪的加V用户 */
 @property (nonatomic,assign,getter=issina_v) BOOL sina_v;
 
+/** 帖子的类型 */
+@property (nonatomic,assign)  FJTopicType type;
+
+/** 音频时长 */
+@property (nonatomic,assign) NSInteger voicetime;
+
+/** 视频时长 */
+@property (nonatomic,assign) NSInteger videotime;
+
+/** 播放次数 */
+@property (nonatomic,assign) NSInteger playcount;
+
+/** 最热评论(期望这个数组中存放的是FJComment模型) */
+@property (nonatomic,strong) NSArray *top_cmt;
 
 
-/********* 额外的辅助属性 ********/
+
+/******************** 额外的辅助属性 ************************/
 
 /** cell模型的高度*/
 @property (nonatomic,assign,readonly) CGFloat cellHeight;
@@ -68,6 +80,14 @@
 
 /** 图片的下载进度 */
 @property (nonatomic,assign) CGFloat pictureProgress;
+
+/** 声音控件的frame */
+@property (nonatomic,assign,readonly)  CGRect voiceViewF;
+
+/** 视频控件的frame */
+@property (nonatomic,assign,readonly)  CGRect videoViewF;
+
+
 
 
 @end

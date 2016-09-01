@@ -24,3 +24,8 @@ UIKIT_EXTERN CGFloat const FJTopicCellTextY;
 UIKIT_EXTERN CGFloat const FJTopicCellPictureMaxH;
 /** 精华-Cell-图片帖子的超出后显示的固定高度*/
 UIKIT_EXTERN CGFloat const FJTopicCellPictureBreakH;
+
+/** FJUser模型-性别属性值*/
+UIKIT_EXTERN NSString * const FJUserSexMale;
+UIKIT_EXTERN NSString * const FJUserSexFemale;
+

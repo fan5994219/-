@@ -165,6 +165,7 @@ static NSString *FJTopicCellId = @"topic";
     } success:^(NSURLSessionDataTask * _Nonnull task, NSDictionary *  responseObject) {
         if (self.parans !=params) return ;
         
+        
         //存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
         

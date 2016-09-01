@@ -24,3 +24,8 @@ CGFloat const FJTopicCellPictureMaxH = 1000;
 CGFloat const FJTopicCellPictureBreakH = 250;
 
 
+/** FJUser模型-性别属性值*/
+NSString * const FJUserSexMale = @"m";
+NSString * const FJUserSexFemale = @"f";
+
+

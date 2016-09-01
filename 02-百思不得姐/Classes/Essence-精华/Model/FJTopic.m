@@ -11,7 +11,6 @@
 
 {
     CGFloat _cellHeight;
-    CGRect _pictureF;
 }
 
 +(NSDictionary *)replacedKeyFromPropertyName{
@@ -23,6 +22,13 @@
              };
     
 }
+
++ (NSDictionary *)mj_objectClassInArray{
+    
+    return @{@"top_cmt":@"FJComment"};
+    
+}
+
 - (NSString *)create_time
 {
     
@@ -108,12 +114,32 @@
             _cellHeight += pictureH + FJTopicCellMargin;
             
             
+        }else if (self.type == FJTopicTypeVoice){ //声音帖子
+    
+            CGFloat voiceX =FJTopicCellMargin;
+            CGFloat voiceY =FJTopicCellMargin +FJTopicCellTextY +textH;
+            CGFloat voiceW =maxsize.width;
+            CGFloat voiceH =voiceW *self.height /self.width;
+            
+            _voiceViewF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
+            
+            _cellHeight += voiceH + FJTopicCellMargin;
+            
+        }else if (self.type == FJTopicTypeVideo){ //声音帖子
+            
+            CGFloat videoX =FJTopicCellMargin;
+            CGFloat videoY =FJTopicCellMargin +FJTopicCellTextY +textH;
+            CGFloat videoW =maxsize.width;
+            CGFloat videoH =videoW *self.height /self.width;
+            
+            _videoViewF = CGRectMake(videoX, videoY, videoW, videoH);
+            
+            _cellHeight += videoH + FJTopicCellMargin;
         }
          //底部工具条
         _cellHeight += FJTopicCellBottonBarH +FJTopicCellMargin;
         
     }
-    
     
     return _cellHeight;
 

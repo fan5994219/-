@@ -9,6 +9,8 @@
 #import "FJTopicCell.h"
 #import "FJTopic.h"
 #import "FJTopicPictureView.h"
+#import "FJTopicVoiceView.h"
+#import "FJTopicVideoView.h"
 @interface FJTopicCell ()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -30,8 +32,15 @@
 /** 帖子的文字内容*/
 @property (weak, nonatomic) IBOutlet UILabel *text_lable;
 
-/** 帖子中间的图片 */
+/** 图片帖子中的内容 */
 @property (nonatomic,weak) FJTopicPictureView *pictureView;
+
+/** 声音帖子中的内容 */
+@property (nonatomic,weak) FJTopicVoiceView *voiceView;
+
+/** 视频帖子中的内容 */
+@property (nonatomic,weak) FJTopicVideoView *videoView;
+
 
 
 @end
@@ -50,6 +59,27 @@
     }
     return _pictureView;
 }
+
+- (FJTopicVoiceView *)voiceView
+{
+    if (!_voiceView) {
+        FJTopicVoiceView *voiceView = [FJTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+
+- (FJTopicVideoView *)videoView
+{
+    if (!_videoView) {
+        FJTopicVideoView *videoView = [FJTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
+}
+
 
 - (void)awakeFromNib{
     UIImageView *bgView = [[UIImageView alloc] init];
@@ -85,9 +115,32 @@
     //根据帖子的内容添加对应的内容添加到帖子内
     
     if (topices.type == FJTopicTypePicture) { //图片帖子
+        self.pictureView.hidden = NO;
         
         self.pictureView.topices = topices;
         self.pictureView.frame = topices.pictureF;
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        
+    }else if (topices.type == FJTopicTypeVoice){ //声音帖子
+        self.voiceView.hidden = NO;
+
+        self.voiceView.frame = topices.voiceViewF;
+        self.voiceView.topices = topices;
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+    
+    }else if (topices.type == FJTopicTypeVideo){  //视频帖子
+        self.videoView.hidden = NO;
+        
+        self.videoView.frame = topices.videoViewF;
+        self.videoView.topices = topices;
+        self.pictureView.hidden = YES;
+        self.voiceView.hidden = YES;
+    }else{  //段子帖子
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
     }
     
 }

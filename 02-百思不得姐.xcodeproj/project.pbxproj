@@ -46,6 +46,10 @@
 		89080C0B1D67440B00DDAF2E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89080C041D67440B00DDAF2E /* SVProgressHUD.bundle */; };
 		89080C0C1D67440B00DDAF2E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 89080C061D67440B00DDAF2E /* SVProgressHUD.m */; };
 		89080C0D1D67440B00DDAF2E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 89080C081D67440B00DDAF2E /* SVRadialGradientLayer.m */; };
+		891AB7241D780A93001EDC9E /* FJTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891AB7231D780A93001EDC9E /* FJTopicVoiceView.m */; };
+		891AB7281D783332001EDC9E /* FJTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 891AB7271D783332001EDC9E /* FJTopicVoiceView.xib */; };
+		891AB72B1D78544C001EDC9E /* FJTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891AB72A1D78544C001EDC9E /* FJTopicVideoView.m */; };
+		891AB72D1D785539001EDC9E /* FJTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 891AB72C1D785539001EDC9E /* FJTopicVideoView.xib */; };
 		892514F81D66BFF100CC5878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892514F71D66BFF100CC5878 /* Assets.xcassets */; };
 		892514FB1D66BFF100CC5878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892514F91D66BFF100CC5878 /* LaunchScreen.storyboard */; };
 		8933228F1D6D8886000E2327 /* FJTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933228E1D6D8886000E2327 /* FJTopic.m */; };
@@ -118,6 +122,8 @@
 		89E79CE31D6A9F0B00938898 /* FJLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E79CE11D6A9F0B00938898 /* FJLoginRegisterViewController.m */; };
 		89E79CE41D6A9F0B00938898 /* FJLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89E79CE21D6A9F0B00938898 /* FJLoginRegisterViewController.xib */; };
 		89E79D7A1D6ACF1700938898 /* FJVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 89E79D791D6ACF1700938898 /* FJVerticalButton.m */; };
+		89EDA0521D78712700AD8D0A /* FJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EDA0511D78712700AD8D0A /* FJUser.m */; };
+		89EDA0551D78746700AD8D0A /* FJComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 89EDA0541D78746700AD8D0A /* FJComment.m */; };
 		89F525AA1D6BFE97007CE9DE /* FJPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F525A91D6BFE97007CE9DE /* FJPushGuideView.m */; };
 		89F525AC1D6BFEB8007CE9DE /* FJPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89F525AB1D6BFEB8007CE9DE /* FJPushGuideView.xib */; };
 		89FE8EDE1D6985DA001B6901 /* FJRecommendTagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89FE8EDD1D6985DA001B6901 /* FJRecommendTagesController.m */; };
@@ -208,6 +214,12 @@
 		89080C061D67440B00DDAF2E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		89080C071D67440B00DDAF2E /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
 		89080C081D67440B00DDAF2E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		891AB7221D780A92001EDC9E /* FJTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTopicVoiceView.h; sourceTree = "<group>"; };
+		891AB7231D780A93001EDC9E /* FJTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTopicVoiceView.m; sourceTree = "<group>"; };
+		891AB7271D783332001EDC9E /* FJTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJTopicVoiceView.xib; sourceTree = "<group>"; };
+		891AB7291D78544C001EDC9E /* FJTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTopicVideoView.h; sourceTree = "<group>"; };
+		891AB72A1D78544C001EDC9E /* FJTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTopicVideoView.m; sourceTree = "<group>"; };
+		891AB72C1D785539001EDC9E /* FJTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJTopicVideoView.xib; sourceTree = "<group>"; };
 		892514E81D66BFF100CC5878 /* 02-百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892514F71D66BFF100CC5878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892514FA1D66BFF100CC5878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -346,6 +358,10 @@
 		89E79CE21D6A9F0B00938898 /* FJLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJLoginRegisterViewController.xib; sourceTree = "<group>"; };
 		89E79D781D6ACF1700938898 /* FJVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJVerticalButton.h; sourceTree = "<group>"; };
 		89E79D791D6ACF1700938898 /* FJVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJVerticalButton.m; sourceTree = "<group>"; };
+		89EDA0501D78712700AD8D0A /* FJUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJUser.h; sourceTree = "<group>"; };
+		89EDA0511D78712700AD8D0A /* FJUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJUser.m; sourceTree = "<group>"; };
+		89EDA0531D78746700AD8D0A /* FJComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJComment.h; sourceTree = "<group>"; };
+		89EDA0541D78746700AD8D0A /* FJComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJComment.m; sourceTree = "<group>"; };
 		89F525A81D6BFE97007CE9DE /* FJPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPushGuideView.h; sourceTree = "<group>"; };
 		89F525A91D6BFE97007CE9DE /* FJPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPushGuideView.m; sourceTree = "<group>"; };
 		89F525AB1D6BFEB8007CE9DE /* FJPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJPushGuideView.xib; sourceTree = "<group>"; };
@@ -414,6 +430,10 @@
 				89FE8EE01D698E6C001B6901 /* FJRecommendTage.m */,
 				8933228D1D6D8886000E2327 /* FJTopic.h */,
 				8933228E1D6D8886000E2327 /* FJTopic.m */,
+				89EDA0501D78712700AD8D0A /* FJUser.h */,
+				89EDA0511D78712700AD8D0A /* FJUser.m */,
+				89EDA0531D78746700AD8D0A /* FJComment.h */,
+				89EDA0541D78746700AD8D0A /* FJComment.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -432,6 +452,12 @@
 				896FC40C1D702C2500D8D170 /* FJTopicPictureView.xib */,
 				89450CDD1D716E190096A1F5 /* FJProgressView.h */,
 				89450CDE1D716E190096A1F5 /* FJProgressView.m */,
+				891AB7221D780A92001EDC9E /* FJTopicVoiceView.h */,
+				891AB7231D780A93001EDC9E /* FJTopicVoiceView.m */,
+				891AB7271D783332001EDC9E /* FJTopicVoiceView.xib */,
+				891AB7291D78544C001EDC9E /* FJTopicVideoView.h */,
+				891AB72A1D78544C001EDC9E /* FJTopicVideoView.m */,
+				891AB72C1D785539001EDC9E /* FJTopicVideoView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -949,6 +975,7 @@
 				TargetAttributes = {
 					892514E71D66BFF100CC5878 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UCCN8K3SJ8;
 					};
 				};
 			};
@@ -977,6 +1004,7 @@
 			files = (
 				895ECF621D675ECE00C0F545 /* Info.plist in Resources */,
 				89080C0B1D67440B00DDAF2E /* SVProgressHUD.bundle in Resources */,
+				891AB7281D783332001EDC9E /* FJTopicVoiceView.xib in Resources */,
 				890062CA1D672DC300CB9C5F /* FJFriendTrendsViewController.xib in Resources */,
 				89FE8EE61D69915A001B6901 /* FJRecommendTageCell.xib in Resources */,
 				89DA48611D68088E00B08C66 /* FJRecommendUserCell.xib in Resources */,
@@ -988,6 +1016,7 @@
 				892514F81D66BFF100CC5878 /* Assets.xcassets in Resources */,
 				8900631F1D67386C00CB9C5F /* Info.plist in Resources */,
 				89450CDC1D7169630096A1F5 /* FJShowPictureViewController.xib in Resources */,
+				891AB72D1D785539001EDC9E /* FJTopicVideoView.xib in Resources */,
 				890062BC1D66C53200CB9C5F /* Info.plist in Resources */,
 				8939C7561D72EAC400E91502 /* FJPublishViewController.xib in Resources */,
 				896FC40D1D702C2500D8D170 /* FJTopicPictureView.xib in Resources */,
@@ -1013,6 +1042,8 @@
 				89080C0C1D67440B00DDAF2E /* SVProgressHUD.m in Sources */,
 				89DA48641D680E8C00B08C66 /* FJRecommendUser.m in Sources */,
 				8939C99D1D73278E00E91502 /* NSData+ImageContentType.m in Sources */,
+				89EDA0521D78712700AD8D0A /* FJUser.m in Sources */,
+				891AB72B1D78544C001EDC9E /* FJTopicVideoView.m in Sources */,
 				890063211D67386C00CB9C5F /* MASConstraint.m in Sources */,
 				89E758811D71412C00593253 /* DALabeledCircularProgressView.m in Sources */,
 				89FE8EDE1D6985DA001B6901 /* FJRecommendTagesController.m in Sources */,
@@ -1026,6 +1057,7 @@
 				8900631B1D67386C00CB9C5F /* AFSecurityPolicy.m in Sources */,
 				893322991D6DC5AB000E2327 /* FJTopicCell.m in Sources */,
 				89DA489F1D6852F900B08C66 /* MJRefreshGifHeader.m in Sources */,
+				89EDA0551D78746700AD8D0A /* FJComment.m in Sources */,
 				890062C11D66E15000CB9C5F /* FJNavigationController.m in Sources */,
 				8900631A1D67386C00CB9C5F /* AFNetworkReachabilityManager.m in Sources */,
 				8939C9A41D73278E00E91502 /* SDWebImagePrefetcher.m in Sources */,
@@ -1072,6 +1104,7 @@
 				890063271D67386C00CB9C5F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				8939C9A11D73278E00E91502 /* SDWebImageDownloader.m in Sources */,
 				895ECF6B1D675ECE00C0F545 /* NSObject+MJProperty.m in Sources */,
+				891AB7241D780A93001EDC9E /* FJTopicVoiceView.m in Sources */,
 				894E7DFF1D6AF64E0022B3D2 /* FJTextField.m in Sources */,
 				8939C9AA1D73278E00E91502 /* UIView+WebCacheOperation.m in Sources */,
 				8939C9A21D73278E00E91502 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1206,6 +1239,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_ENABLE_PASCAL_STRINGS = YES;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/02-百思不得姐/Classes/Other- 其他/PrefixHeader.pch";
@@ -1214,6 +1249,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "none.-2------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1222,6 +1258,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_ENABLE_PASCAL_STRINGS = YES;
 				GCC_INPUT_FILETYPE = automatic;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/02-百思不得姐/Classes/Other- 其他/PrefixHeader.pch";
@@ -1230,6 +1268,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "none.-2------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
