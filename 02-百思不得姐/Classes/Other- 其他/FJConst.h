@@ -29,3 +29,5 @@ UIKIT_EXTERN CGFloat const FJTopicCellPictureBreakH;
 UIKIT_EXTERN NSString * const FJUserSexMale;
 UIKIT_EXTERN NSString * const FJUserSexFemale;
 
+/** 精华-Cell-最热评论标题文字的高度*/
+UIKIT_EXTERN CGFloat const FJTopicCellTopCmtTitleH;

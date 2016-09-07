@@ -7,6 +7,8 @@
 //
 
 #import "FJTopic.h"
+#import "FJComment.h"
+#import "FJUser.h"
 @implementation FJTopic
 
 {
@@ -20,7 +22,6 @@
              @"large_image":@"image1"
              
              };
-    
 }
 
 + (NSDictionary *)mj_objectClassInArray{
@@ -31,8 +32,6 @@
 
 - (NSString *)create_time
 {
-    
-    
     
         //格式化日期类  //自定义时间
         NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
@@ -53,8 +52,6 @@
                 }else if (cmps.minute >=1){ //时间差距 大于1分钟 小于1小时
     
                     return [NSString stringWithFormat:@"%zd分钟前",cmps.minute];
-    
-    
                 } //时间差距 不到一分钟 刚刚
     
           return @"刚刚";
@@ -68,14 +65,12 @@
             fmt.dateFormat = @"MM-dd HH:mm:ss";
     
             return [fmt stringFromDate:creat];
-    
             
         }else{ //其他
             
            return _create_time;
     
         }
-
 }
 
 - (CGFloat)cellHeight
@@ -89,7 +84,7 @@
         
         //    CGFloat textH = [topic.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:maxsize].height;  //经典求高度 （过期）
         
-        CGFloat textH = [self.text boundingRectWithSize:maxsize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:14]} context:nil].size.height;
+        CGFloat textH = [self.text boundingRectWithSize:maxsize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil].size.height;
         //文字的高度
         _cellHeight= FJTopicCellTextY +textH + FJTopicCellMargin;
 
@@ -103,7 +98,6 @@
                 pictureH = FJTopicCellPictureBreakH;
                 self.bigPicture = YES;//大图
             }
-            
             //计算图片控件的frame
             CGFloat pictureX = FJTopicCellMargin;
             CGFloat pictureY = FJTopicCellMargin +FJTopicCellTextY +textH;
@@ -135,6 +129,18 @@
             _videoViewF = CGRectMake(videoX, videoY, videoW, videoH);
             
             _cellHeight += videoH + FJTopicCellMargin;
+        }
+        
+        FJComment *cmt = [self.top_cmt firstObject];
+        
+        NSString *content = [NSString stringWithFormat:@"%@ : %@",cmt.user.username,cmt.content];
+        
+        CGFloat contentH =[content boundingRectWithSize:maxsize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13]} context:nil].size.height;
+        
+        
+        //如果有最热评论
+        if (cmt) {
+            _cellHeight +=FJTopicCellTopCmtTitleH +contentH + FJTopicCellMargin;
         }
          //底部工具条
         _cellHeight += FJTopicCellBottonBarH +FJTopicCellMargin;

@@ -9,6 +9,7 @@
 #import "FJTopicViewController.h"
 #import "FJTopic.h"
 #import "FJTopicCell.h"
+#import "FJCommentViewController.h"
 
 static NSString *FJTopicCellId = @"topic";
 
@@ -236,5 +237,12 @@ static NSString *FJTopicCellId = @"topic";
     return topic.cellHeight;
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    FJCommentViewController *commentVC = [[FJCommentViewController alloc]init];
+    [self.navigationController pushViewController:commentVC animated:YES];
+    
+}
 
 @end

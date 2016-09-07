@@ -11,6 +11,8 @@
 #import "FJTopicPictureView.h"
 #import "FJTopicVoiceView.h"
 #import "FJTopicVideoView.h"
+#import "FJComment.h"
+#import "FJUser.h"
 @interface FJTopicCell ()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -40,7 +42,10 @@
 
 /** 视频帖子中的内容 */
 @property (nonatomic,weak) FJTopicVideoView *videoView;
-
+/** 评论内容*/
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLable;
+/** 最热评论父控件*/
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
 
 
 @end
@@ -141,6 +146,16 @@
         self.videoView.hidden = YES;
         self.voiceView.hidden = YES;
         self.pictureView.hidden = YES;
+    }
+    
+    //处理最热评论
+    
+    FJComment *cmt = [topices.top_cmt firstObject];
+    if (cmt) {
+        self.topCmtView.hidden = NO;
+    self.topCmtContentLable.text =[NSString stringWithFormat:@"%@ : %@",cmt.user.username,cmt.content];
+    }else{
+        self.topCmtView.hidden = YES;
     }
     
 }

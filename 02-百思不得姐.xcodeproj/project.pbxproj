@@ -52,6 +52,8 @@
 		891AB72D1D785539001EDC9E /* FJTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 891AB72C1D785539001EDC9E /* FJTopicVideoView.xib */; };
 		892514F81D66BFF100CC5878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 892514F71D66BFF100CC5878 /* Assets.xcassets */; };
 		892514FB1D66BFF100CC5878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 892514F91D66BFF100CC5878 /* LaunchScreen.storyboard */; };
+		892B7CEB1D7FE96100BA422D /* FJCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 892B7CE91D7FE96100BA422D /* FJCommentViewController.m */; };
+		892B7CEC1D7FE96100BA422D /* FJCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892B7CEA1D7FE96100BA422D /* FJCommentViewController.xib */; };
 		8933228F1D6D8886000E2327 /* FJTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 8933228E1D6D8886000E2327 /* FJTopic.m */; };
 		893322951D6DBAEF000E2327 /* FJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 893322941D6DBAEF000E2327 /* FJConst.m */; };
 		893322991D6DC5AB000E2327 /* FJTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 893322971D6DC5AB000E2327 /* FJTopicCell.m */; };
@@ -224,6 +226,9 @@
 		892514F71D66BFF100CC5878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		892514FA1D66BFF100CC5878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		892514FC1D66BFF100CC5878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		892B7CE81D7FE96100BA422D /* FJCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJCommentViewController.h; sourceTree = "<group>"; };
+		892B7CE91D7FE96100BA422D /* FJCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJCommentViewController.m; sourceTree = "<group>"; };
+		892B7CEA1D7FE96100BA422D /* FJCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FJCommentViewController.xib; sourceTree = "<group>"; };
 		8933228D1D6D8886000E2327 /* FJTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJTopic.h; sourceTree = "<group>"; };
 		8933228E1D6D8886000E2327 /* FJTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJTopic.m; sourceTree = "<group>"; };
 		893322931D6DBAEF000E2327 /* FJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJConst.h; sourceTree = "<group>"; };
@@ -419,6 +424,9 @@
 				89450CD81D7169630096A1F5 /* FJShowPictureViewController.h */,
 				89450CD91D7169630096A1F5 /* FJShowPictureViewController.m */,
 				89450CDA1D7169630096A1F5 /* FJShowPictureViewController.xib */,
+				892B7CE81D7FE96100BA422D /* FJCommentViewController.h */,
+				892B7CE91D7FE96100BA422D /* FJCommentViewController.m */,
+				892B7CEA1D7FE96100BA422D /* FJCommentViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1022,6 +1030,7 @@
 				896FC40D1D702C2500D8D170 /* FJTopicPictureView.xib in Resources */,
 				89F525AC1D6BFEB8007CE9DE /* FJPushGuideView.xib in Resources */,
 				8933229A1D6DC5AB000E2327 /* FJTopicCell.xib in Resources */,
+				892B7CEC1D7FE96100BA422D /* FJCommentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1070,6 +1079,7 @@
 				89DA48971D6852F900B08C66 /* MJRefreshFooter.m in Sources */,
 				89080C0D1D67440B00DDAF2E /* SVRadialGradientLayer.m in Sources */,
 				890063281D67386C00CB9C5F /* View+MASAdditions.m in Sources */,
+				892B7CEB1D7FE96100BA422D /* FJCommentViewController.m in Sources */,
 				8939C99F1D73278E00E91502 /* SDWebImageCompat.m in Sources */,
 				89DA489C1D6852F900B08C66 /* MJRefreshBackGifFooter.m in Sources */,
 				89080C0A1D67440B00DDAF2E /* SVProgressAnimatedView.m in Sources */,
